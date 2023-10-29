@@ -4,7 +4,7 @@
 
 Check out our carefully selected list of **basic** and **advanced** Trees questions and answers to be well-prepared for your tech interviews in 2024.
 
-![Trees Decorative Image](https://storage.googleapis.com/dev-stack-app.appspot.com/blogImg/trees.png?GoogleAccessId=firebase-adminsdk-bgeaf%40dev-stack-app.iam.gserviceaccount.com&Expires=1698606961&Signature=Y8O6nmgk81aro2iTOg%2BU16JlrEm92rvcZ%2BhHQMHiB2qUxkWjA%2F8sDe2Iug1YhpBXLgY2N0%2FfZ4VxhjdK1IdP7I%2FyLjNSCIHsZVkuTi%2BEuXNPMa0rUhv2SvoICNO8E%2BqHsfn4YOKI1ohcCVKH9haZLzwR%2BOi%2FFwG0TINhHs%2Fzo31srYiNw61a1x7p1f8EMbrKxcwT%2FvzUK9LP%2FQsND0hJ%2F2KAAMHZTeGrijKrb4xlx773MKWOixmQHEoYDLZSKp4iWZHAqhc64PcDDzC7updlh1rR7RX1zjICI1NWznfoG09TqrgjPuSdSvzgu%2ByCjYlVU1Ya0d4TXteMA3DIln5Zcg%3D%3D)
+![Trees Decorative Image](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/blogImg%2Ftrees.png?alt=media&token=a7da150f-eadf-436d-bb44-8e64473cd882&_gl=1*ns9xz9*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5ODYwNTk1NS4xOTAuMS4xNjk4NjA2NjcyLjExLjAuMA..)
 
 👉🏼 You can also find all answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
 
