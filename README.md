@@ -1,87 +1,659 @@
+# ⚫ Trees in Tech Interviews 2024: 28 Core Questions & Answers
 
-# 🖲 32+ Tree Data Structures interview questions for developers in 2021
+**Trees** are hierarchical data structures consisting of nodes connected by edges, with a singular root node and subsequent child nodes. They are foundational in representing hierarchical data, and in tasks like parsing expressions and managing databases. In coding interviews, questions about trees assess a candidate's understanding of **hierarchical data storage**, tree traversals, and various tree-based algorithms.
 
-In computer science, a tree is a widely used abstract data type that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes. Check our list of essential Trees interview questions and answers that will trend on data structures interviews in 2021.
+Check out our carefully selected list of **basic** and **advanced** Trees questions and answers to be well-prepared for your tech interviews in 2024.
 
-</br>
+![Trees Decorative Image](https://storage.googleapis.com/dev-stack-app.appspot.com/blogImg/trees.png?GoogleAccessId=firebase-adminsdk-bgeaf%40dev-stack-app.iam.gserviceaccount.com&Expires=1698606961&Signature=Y8O6nmgk81aro2iTOg%2BU16JlrEm92rvcZ%2BhHQMHiB2qUxkWjA%2F8sDe2Iug1YhpBXLgY2N0%2FfZ4VxhjdK1IdP7I%2FyLjNSCIHsZVkuTi%2BEuXNPMa0rUhv2SvoICNO8E%2BqHsfn4YOKI1ohcCVKH9haZLzwR%2BOi%2FFwG0TINhHs%2Fzo31srYiNw61a1x7p1f8EMbrKxcwT%2FvzUK9LP%2FQsND0hJ%2F2KAAMHZTeGrijKrb4xlx773MKWOixmQHEoYDLZSKp4iWZHAqhc64PcDDzC7updlh1rR7RX1zjICI1NWznfoG09TqrgjPuSdSvzgu%2ByCjYlVU1Ya0d4TXteMA3DIln5Zcg%3D%3D)
 
-<p align="center">
-  <a href="https://devinterview.io/">
-  <img src="https://source.unsplash.com/collection/52661698/600x300">
-  </a>
-</p>
+👉🏼 You can also find all answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
 
-</br>
+---
 
-> You can also find all 32 answers here 👉🏼 https://devinterview.io/data/trees-interview-questions
-</br>
+## 🔹 1. What is a _Tree Data Structure_?
 
-<div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 1. Define Tree Data Structure</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Trees</strong> are well-known as a <em>non-linear</em> data structure. They don’t store data in a linear way. They organize data <em>hierarchically</em>.</p><p>A <strong>tree</strong> is a collection of entities called <strong>nodes</strong>. Nodes are connected by <strong>edges</strong>. Each node contains a <strong>value</strong> or <strong>data</strong> or <strong>key</strong>, and it may or may not have a <strong>child</strong> node. The first node of the tree is called the <strong>root</strong>. <strong>Leaves</strong> are the last nodes on a tree. They are nodes without children.</p><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/" rel="noreferrer" target="_blank" title="Define Tree Data Structure Interview Questions Source To Answer">www.freecodecamp.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 2. Define Binary Tree</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>A normal tree has no restrictions on the number of children each node can have. A <strong>binary tree</strong> is made of nodes, where each node contains a "left" pointer, a "right" pointer, and a data element. </p><p>There are three different types of binary trees:</p><ul><li><strong>Full binary tree</strong>: Every node other than leaf nodes has 2 child nodes.</li><li><strong>Complete binary tree</strong>: All levels are filled except possibly the last one, and all nodes are filled in as far left as possible.</li><li><strong>Perfect binary tree</strong>: All nodes have two children and all leaves are at the same level.</li></ul><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://study.com/academy/lesson/binary-trees-applications-implementation.html" rel="noreferrer" target="_blank" title="Define Binary Tree Interview Questions Source To Answer">study.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 3. What is Height and Depth of a Tree and its Nodes?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><ul><li>The <strong>depth of a node</strong> is the length of the <em>path to its root</em></li><li>The <strong>height of a node</strong> is the number of edges on the longest path from the node to a leaf</li><li>The <strong>height of a tree</strong> is the length of the <em>longest path to a leaf</em></li></ul><br><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://medium.com/@merunasgrincalaitis/the-ultimate-guide-to-master-tree-data-structures-step-by-step-1b361f2be850" rel="noreferrer" target="_blank" title="What is Height and Depth of a Tree and its Nodes? Interview Questions Source To Answer">medium.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 4. What's the difference between the data structure Tree and Graph?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Graph:</strong></p><ul><li>Consists of a set of vertices (or nodes) and a set of edges connecting some or all of them</li><li>Any edge can connect any two vertices that aren't already connected by an identical edge (in the same direction, in the case of a directed graph)</li><li>Doesn't have to be connected (the edges don't have to connect all vertices together): a single graph can consist of a few disconnected sets of vertices</li><li>Could be directed or undirected (which would apply to all edges in the graph)</li></ul><p><strong>Tree:</strong></p><ul><li>A type of graph (fit with in the category of Directed Acyclic Graphs (or a DAG))</li><li>Vertices are more commonly called "nodes"</li><li>Edges are directed and represent an "is child of" (or "is parent of") relationship</li><li>Each node (except the root node) has exactly one parent (and zero or more children)</li><li>Has exactly one "root" node (if the tree has at least one node), which is a node without a parent</li><li>Has to be connected</li><li>Is acyclic, meaning it has no cycles: "a cycle is a path <a href="">AKA sequence</a> of edges and vertices wherein a vertex is reachable from itself"</li><li>Trees aren't a recursive data structure</li></ul><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/7423401/whats-the-difference-between-the-data-structure-tree-and-graph" rel="noreferrer" target="_blank" title="What's the difference between the data structure Tree and Graph? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 5. What is Binary Search Tree?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Binary search tree</strong> is a data structure that quickly allows to maintain a <em>sorted list</em> of numbers.</p><ul><li>It is called a <em>binary tree</em> because each tree node has maximum of two children.</li><li>It is called a <em>search tree</em> because it can be used to search for the presence of a number in <code>O(log n)</code> time.</li></ul><p>The properties that separates a binary search tree from a regular binary tree are:</p><ul><li>All nodes of left subtree are less than root node</li><li>All nodes of right subtree are more than root node</li><li>Both subtrees of each node are also BSTs i.e. they have the above two properties</li></ul><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.programiz.com/dsa/binary-search-tree" rel="noreferrer" target="_blank" title="What is Binary Search Tree? Interview Questions Source To Answer">www.programiz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 6. How to implement a tree data-structure? Provide some code.</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>That is a basic (generic) tree structure that can be used for <code>String</code> or any other object:</p></div></div><div style="font-size: 14px;"><div class="mb-3 mt-2"><span class="h5">Implementation</span></div><div><nav class="mdc-tab-bar"><div class="mdc-tab-scroller"><div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;"><div class="mdc-tab-scroller__scroll-content"><button class="mdc-ripple-upgraded mdc-ripple-upgraded--background-focused mdc-tab mdc-tab--min-width mdc-tab--active" aria-selected="true" tabindex="0"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Java</span>&nbsp;<span class="shadow-text lang-badge java">Java</span></span></div><span class="mdc-tab-indicator mdc-tab-indicator--active"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded mdc-ripple-upgraded--background-focused"></div></button><button class="mdc-ripple-upgraded mdc-tab mdc-tab--min-width"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Python</span>&nbsp;<span class="shadow-text lang-badge py">PY</span></span></div><span class="mdc-tab-indicator"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded"></div></button></div></div></div></nav></div><div class="mt-2"><div class="AnswerBody"><pre><code><span class="token cVar">public</span> <span class="token cVar">class</span> <span class="token class-name">Tree</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span></span> <span class="token cBase">{</span>
-    <span class="token cVar">private</span> <span class="token class-name">Node</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span></span> root<span class="token cBase">;</span>
+### Answer
 
-    <span class="token cVar">public</span> <span class="token class-name">Tree</span><span class="token cBase">(</span><span class="token class-name">T</span> rootData<span class="token cBase">)</span> <span class="token cBase">{</span>
-        root <span class="token cBase">=</span> <span class="token cVar">new</span> <span class="token class-name">Node</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span></span><span class="token cBase">(</span><span class="token cBase">)</span><span class="token cBase">;</span>
-        root<span class="token cBase">.</span>data <span class="token cBase">=</span> rootData<span class="token cBase">;</span>
-        root<span class="token cBase">.</span>children <span class="token cBase">=</span> <span class="token cVar">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">Node</span><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span><span class="token cBase">&gt;</span></span><span class="token cBase">(</span><span class="token cBase">)</span><span class="token cBase">;</span>
-    <span class="token cBase">}</span>
+A **tree data structure** is a hierarchical collection of nodes, typically visualized with a root at the top. Trees are typically used for representing relationships, hierarchies, and facilitating efficient data operations.
 
-    <span class="token cVar">public</span> <span class="token cVar">static</span> <span class="token cVar">class</span> <span class="token class-name">Node</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span></span> <span class="token cBase">{</span>
-        <span class="token cVar">private</span> <span class="token class-name">T</span> data<span class="token cBase">;</span>
-        <span class="token cVar">private</span> <span class="token class-name">Node</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span></span> parent<span class="token cBase">;</span>
-        <span class="token cVar">private</span> <span class="token class-name">List</span><span class="token generics"><span class="token cBase">&lt;</span><span class="token class-name">Node</span><span class="token cBase">&lt;</span><span class="token class-name">T</span><span class="token cBase">&gt;</span><span class="token cBase">&gt;</span></span> children<span class="token cBase">;</span>
-    <span class="token cBase">}</span>
-<span class="token cBase">}</span></code></pre></div></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/2358045/how-can-i-implement-a-tree-in-python" rel="noreferrer" target="_blank" title="How to implement a tree data-structure? Provide some code. Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 7. What is the difference between Tree Depth and Height?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>Depth and height are properties of a <em>node</em>:</p><ul><li>The <strong>depth</strong> of a node is the number of edges from the node to the tree's root node.<br>A root node will have a depth of 0.</li><li>The <strong>height</strong> of a node is the number of edges on the <em>longest path</em> from the node to a leaf.<br>A leaf node will have a height of 0.</li></ul><p>Properties of a <em>tree</em>:</p><ul><li>The <strong>height</strong> of a tree would be the height of its root node,<br>or equivalently, the depth of its deepest node.</li><li>The <strong>diameter</strong> (or <strong>width</strong>) of a tree is the number of <em>nodes</em> on the longest path between any two leaf nodes. The tree below has a diameter of 6 nodes.</li></ul><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-height/2603707#2603707" rel="noreferrer" target="_blank" title="What is the difference between Tree Depth and Height? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 8. Why do we want to use Binary Search Tree?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>If we implement a <strong>balanced binary search tree</strong>, we can always keep the cost of <code>insert()</code>, <code>delete()</code>, <code>lookup()</code> to <code>O(log n)</code> where <code>n</code> is the number of nodes in the tree - so the benefit really is that lookups can be done in logarithmic time which matters a lot when n is large. This is much better than the <em>linear</em> time <code>O(n)</code> required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://en.wikipedia.org/wiki/Binary_search_tree" rel="noreferrer" target="_blank" title="Why do we want to use Binary Search Tree? Interview Questions Source To Answer">en.wikipedia.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 9. Provide some practical examples of using Depth-First Search (DFS) vs Breadth-First Search (BFS)?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><ul><li><p><strong>Depth-first searches</strong> are often used in simulations of games (and game-like situations in the real world). In a typical game you can choose one of several possible actions. Only some paths in a game tree lead to your win. Some lead to a win by your opponent, when you reach such an ending, you must back up, or backtrack, to a previous node and try a different path. In this way you explore the tree until you find a path with a successful conclusion. Another example, given a family tree if one were looking for someone on the tree who’s still alive, then it would be safe to assume that person would be on the bottom of the tree. This means that a BFS would take a very long time to reach that last level. A DFS, however, would find the goal faster.</p></li><li><p>The <strong>breadth-first search</strong> has an interesting property: It first finds all the vertices that are one edge away from the starting point, then all the vertices that are two edges away, and so on. This is useful if you’re trying to find the shortest path from the starting vertex to a given vertex. Breadth-first search can be used for finding the neighbour nodes in peer to peer networks like BitTorrent, GPS systems to find nearby locations, social networking sites to find people in the specified distance.</p></li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf" rel="noreferrer" target="_blank" title="Provide some practical examples of using Depth-First Search (DFS) vs Breadth-First Search (BFS)? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 10. What is Balanced Tree and why is that important?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>A tree is said to be balanced only when all three conditions satisfy:</p><ul><li>The left and right subtrees height differ by at most one</li><li>The left subtree is balanced</li><li>The right subtree is balanced</li></ul><p><strong>Height-balancing</strong> requirement:</p><ul><li>A node in a tree is height-balanced if the heights of its subtrees differ by no more than 1. </li><li>A tree is height-balanced if all of its nodes are height-balanced.</li></ul><p></p><div><div><div><div></div></div></div></div><p></p><p>In a balanced BST, the height of the tree is <code>log n</code> where <code>n</code> is the number of elements in the tree. In the worst case and in an unbalanced BST, the height of the tree can be upto <code>n</code> which makes it same as a linked list. In the worst case each of the operations (lookup, insertion and deletion) takes time <code>O(n)</code> that shall be avoided. </p><blockquote><p>Balanced BST maintains <code>h</code> = <code>O(log n)</code> so all operations run in <code>O(log n)</code> time.</p></blockquote></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://medium.com/@rupeshmalkar/convert-a-binary-search-tree-to-a-balanced-binary-tree-2c9a59e766d2" rel="noreferrer" target="_blank" title="What is Balanced Tree and why is that important? Interview Questions Source To Answer">medium.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 11. What are advantages and disadvantages of BST?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Advantages of BST:</strong></p><ul><li>If we implement a balanced binary search tree, we can always keep the cost of <code>insert()</code>, <code>delete()</code>, <code>lookup()</code> to <code>O(log n)</code></li><li>BST is much faster than an array at search, insert, and delete (<code>O(log n)</code> vs <code>O(n)</code>)</li><li>Code is simple relative to other data structures</li></ul><p><strong>Disadvantages of BST:</strong></p><ul><li>BST is slightly slower than an array at access (<code>O(log n)</code> vs <code>O(1)</code>)</li><li>A binary search tree can get out of balance (<em>imbalanced</em>) or become <em>degenerated</em></li><li>We should always implement a <em>balanced</em> binary search tree (using some <em>self-balancing mechanism</em>) - AVL tree, Red-Black tree, Splay tree. Otherwise the cost of operations may not be logarithmic and degenerate into a linear search on an array.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.nickang.com/why-use-binary-search-tree/" rel="noreferrer" target="_blank" title="What are advantages and disadvantages of BST? Interview Questions Source To Answer">www.nickang.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 12. Explain the difference between Binary Tree and Binary Search Tree with an example?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Binary tree</strong>: Tree where each node has up to two leaves</p><pre><code>  1
- / \
-2   3</code></pre><p><strong>Binary Search Tree (BST)</strong>: Used for <strong>searching</strong>. A binary tree where the left child contains <em>only</em> nodes with values less than the parent node, and where the right child <em>only</em> contains nodes with values greater than or equal to the parent.</p><pre><code>  2
- / \
-1   3</code></pre></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/6380231/difference-between-binary-tree-and-binary-search-tree" rel="noreferrer" target="_blank" title="Explain the difference between Binary Tree and Binary Search Tree with an example? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 13. What is AVL Tree?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>AVL trees</strong> are <em>height balancing binary search tree</em>. It is named after Adelson-Velsky and Landis, the inventors of the AVL tree. AVL tree checks the height of the left and the right sub-trees and assures that the difference is not more than 1. This difference is called the <strong>Balance Factor</strong>.  This allows us to search for an element in the AVL tree in <code>O(log n)</code>, where <code>n</code> is the number of elements in the tree. </p><p>The <strong>balance factor</strong> of a node (N) in a binary tree is defined as the height difference:</p><pre><code><span class="token cMod">BalanceFactor</span><span class="token cBase">(</span><span class="token cMod">N</span><span class="token cBase">)</span> <span class="token cBase">=</span> <span class="token cMod">height</span><span class="token cBase">(</span><span class="token cMod">left_sutree</span><span class="token cBase">(</span><span class="token cMod">N</span><span class="token cBase">)</span><span class="token cBase">)</span> − <span class="token cMod">height</span><span class="token cBase">(</span><span class="token cMod">right_sutree</span><span class="token cBase">(</span><span class="token cMod">N</span><span class="token cBase">)</span><span class="token cBase">)</span> <span class="token cComment">// BalanceFactor(N) belongs to the set {-1,0,1}</span></code></pre><p>If the balance factor doesn’t equal -1,0, or 1 then our tree is unbalanced, and we need to perform certain operations (called <strong>rotations</strong>) to balance the tree. Specifically we need to do one or more of 4 tree <strong>rotations</strong>:</p><ul><li>Left Rotation, </li><li>Right Rotation, </li><li>Left Right Rotation, </li><li>Right Left Rotation.</li></ul><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://medium.com/@randerson112358/avl-trees-a7b4f1fa2d1a" rel="noreferrer" target="_blank" title="What is AVL Tree? Interview Questions Source To Answer">medium.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 14. What is Diameter of a Tree?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Diameter</strong> of tree is defined as a <strong>longest path or route between any two nodes in a tree</strong>. The path may or may not for through the root.</p><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://algorithms.tutorialhorizon.com/diameter-of-a-binary-tree/" rel="noreferrer" target="_blank" title="What is Diameter of a Tree? Interview Questions Source To Answer">algorithms.tutorialhorizon.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 15. Classify Tree Traversal Algorithms. Provide some visual explanation.</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>Tree Traversal algorithms can be classified broadly in two categories:</p><ul><li>Depth-First Search (DFS) Algorithms</li><li>Breadth-First Search (BFS) Algorithms</li></ul><p><strong>Depth-First Search (DFS) Algorithms have three variants:</strong></p><ol><li>Preorder Traversal (current-left-right)— Visit the current node before visiting any nodes inside left or right subtrees.</li><li>Inorder Traversal (left-current-right)— Visit the current node after visiting all nodes inside left subtree but before visiting any node within the right subtree.</li><li>Postorder Traversal (left-right-current) — Visit the current node after visiting all the nodes of left and right subtrees.</li></ol><div><table>
-<tbody><tr>
-<td>
-<img src="https://www.techiedelight.com/wp-content/uploads/Preorder-Traversal.png">
-</td>
-<td>
-<img src="https://www.techiedelight.com/wp-content/uploads/Inorder-Traversal.png">
-</td>
-<td>
-<img src="https://www.techiedelight.com/wp-content/uploads/Postorder-Traversal.png"></td></tr></tbody></table></div><div>
+### Core Definitions
 
-</div><p><strong>Breadth-First Search (BFS) Algorithm has one variant:</strong></p><ol><li>Level Order Traversal — Visit nodes level-by-level and left-to-right fashion at the same level.
-<div><div><div><div></div></div></div></div></li></ol></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846" rel="noreferrer" target="_blank" title="Classify Tree Traversal Algorithms. Provide some visual explanation. Interview Questions Source To Answer">towardsdatascience.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 16. What is the difference between Heap and Red-Black Tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 17. How does inserting or deleting nodes affect a Red-Black tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 18. What is the time complexity for insert into Red-Black Tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 19. What is Red-Black tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 20. Explain how to balance AVL Tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 21. Explain a B-Tree data structure for 5 years old</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 22. Explain what is B-Tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 23. Why does a Breadth First Search (BFS) use more memory than Depth First Search (DFS)?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 24. Explain what the main differences between red-black (RB) trees and AVL trees</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 25. How do we know whether we need to use BSF or DSF algorithm?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 26. Is there any reason anyone should use BSTs instead of AVLs in the first place?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 27. What's the main reason for choosing Red Black (RB) trees instead of AVL trees?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 28. How is an AVL tree different from a B-tree?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 29. What are the differences between B trees and B+ trees?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 30. Why is a Hash Table not used instead of a B-Tree in order to access data inside a database?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 31. Why do we need a separate datastructure like B-Tree for database and file system?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 32. How are B-Trees used in practice?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/trees-interview-questions">all 32 answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div></div>
+- **Node**: The basic unit of a tree that contains data and may link to child nodes.
+- **Root**: The tree's topmost node; no nodes point to the root.
+- **Parent / Child**: Nodes with a direct connection; a parent points to its children.
+- **Leaf**: A node that has no children.
+- **Edge**: A link or reference from one node to another.
+- **Depth**: The level of a node, or its distance from the root.
+- **Height**: Maximum depth of any node in the tree.
 
-<br />
+### Key Characteristics
 
-> You can also find more data structures interview questions here 👉🏼 https://devinterview.io/data/
+- **Hierarchical**: Organized in parent-child relationships.
+- **Non-Sequential**: Non-linear data storage ensures flexible and efficient access patterns.
+- **Directed**: Nodes are connected unidirectionally.
+- **Acyclic**: Trees do not have loops or cycles.
+- **Diverse Node Roles**: Such as root and leaf.
+
+### Visual Representation
+
+![Tree Data Structure](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/binary%20tree%2FTreedatastructure%20(1).png?alt=media&token=d6b820e4-e956-4e5b-8190-2f8a38acc6af&_gl=1*3qk9u9*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5NzI4NzY1Ny4xNTUuMS4xNjk3Mjg5NDU1LjUzLjAuMA..)
+
+### Common Tree Variants
+
+- **Binary Tree**: Each node has a maximum of two children.
+- **Binary Search Tree (BST)**: A binary tree where each node's left subtree has values less than the node and the right subtree has values greater.
+- **AVL Tree**: A BST that self-balances to optimize searches.
+- **B-Tree**: Commonly used in databases to enable efficient access.
+- **Red-Black Tree**: A BST that maintains balance using node coloring.
+- **Trie**: Specifically designed for efficient string operations.
+
+### Practical Applications
+
+- **File Systems**: Model directories and files.
+- **AI and Decision Making**: Decision trees help in evaluating possible actions.
+- **Database Systems**: Many databases use trees to index data efficiently.
+
+### Tree Traversals
+
+#### Depth-First Search
+
+- **Preorder**: Root, Left, Right.
+- **Inorder**: Left, Root, Right (specific to binary trees).
+- **Postorder**: Left, Right, Root.
+
+#### Breadth-First Search
+
+- **Level Order**: Traverse nodes by depth, moving from left to right.
+
+### Code Example: Binary Tree
+
+Here is the Python code:
+
+```python
+class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+# Create a tree structure
+root = Node(1)
+root.left, root.right = Node(2), Node(3)
+root.left.left, root.right.right = Node(4), Node(5)
+
+# Inorder traversal
+def inorder_traversal(node):
+    if node:
+        inorder_traversal(node.left)
+        print(node.data, end=' ')
+        inorder_traversal(node.right)
+
+# Expected Output: 4 2 1 3 5
+print("Inorder Traversal: ")
+inorder_traversal(root)
+```
+
+---
+
+## 🔹 2. What is the difference between a _Tree_ and a _Graph_?
+
+### Answer
+
+**Graphs** and **trees** are both nonlinear data structures, but there are fundamental distinctions between them.
+
+### Key Distinctions
+
+- **Uniqueness**: Trees have a single root, while graphs may not have such a concept.
+- **Topology**: Trees are **hierarchical**, while graphs can exhibit various structures.
+-  **Focus**: Graphs center on relationships between individual nodes, whereas trees emphasize the relationship between nodes and a common root.
+
+### Graphs: Versatile and Unstructured
+
+- **Elements**: Composed of vertices/nodes (denoted as V) and edges (E) representing relationships. Multiple edges and **loops** are possible.
+- **Directionality**: Edges can be directed or undirected.
+- **Connectivity**: May be **disconnected**, with sets of vertices that aren't reachable from others.
+- **Loops**: Can contain cycles.
+
+### Trees: Hierarchical and Organized
+
+- **Elements**: Consist of nodes with parent-child relationships.
+- **Directionality**: Edges are strictly parent-to-child.
+- **Connectivity**: Every node is accessible from the unique root node.
+- **Loops**: Cycles are not allowed.
+
+### Visual Representation
+
+![Graph vs Tree](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/graph-theory%2Ftree-graph.jpg?alt=media&token=0362c5d3-e851-4cd2-bbb4-c632e77ccede&_gl=1*euedhq*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5NzI4NzY1Ny4xNTUuMS4xNjk3Mjg5NjU2LjYwLjAuMA..)
+
+---
+
+## 🔹 3. Explain _Height_ and _Depths_ in the context of a _Tree_.
+
+### Answer
+
+In tree data structures, the terms **height** and **depth** refer to different attributes of nodes.
+
+### Height
+
+The **height** of a node is the number of edges on the longest downward path between that node and a leaf.
+
+- **Height of a Node**: Number of edges in the longest path from that node to any leaf.
+- **Height of a Tree**: Essentially the height of its root node.
+
+### Depth
+
+The **depth** or **level** of a node represents the number of edges on the path from the root node to that node. 
+
+For instance, in a binary tree, if a node is at depth 2, it means there are two edges between the root and that node.
+
+### Visual Representation
+
+![Height and Depths in a Tree Data Structure](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/trees%2Ftree-height-depths%20(1).png?alt=media&token=3c068810-5432-439e-af76-6a8b8dbb746a&_gl=1*1gwqb6o*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5NzMwNDc2OC4xNTYuMS4xNjk3MzA1OTk1LjUwLjAuMA..)
+
+### Code Example: Calculating Height and Depth
+
+Here is the Python code:
+
+```python
+class Node:
+    def __init__(self, data, parent=None):
+        self.data = data
+        self.left = None
+        self.right = None
+        self.parent = parent
+
+def height(node):
+    if node is None:
+        return -1
+    left_height = height(node.left)
+    right_height = height(node.right)
+    return 1 + max(left_height, right_height)
+
+def depth(node, root):
+    if node is None:
+        return -1
+    dist = 0
+    while node != root:
+        dist += 1
+        node = node.parent
+    return dist
+
+# Create a sample tree
+root = Node(1)
+root.left = Node(2, root)
+root.right = Node(3, root)
+root.left.left = Node(4, root.left)
+root.left.right = Node(5, root.left)
+
+# Test height and depth functions
+print("Height of tree:", height(root))
+print("Depth of node 4:", depth(root.left.left, root))
+print("Depth of node 5:", depth(root.left.right, root))
+```
+
+---
+
+## 🔹 4. What is a _Diameter_ of a _Tree_?
+
+### Answer
+
+The **diameter** of a tree (or any other graph) refers to the longest path between any two nodes. In the context of a tree data structure, it represents the number of nodes on the **longest path** between two leaves.
+
+### Key Points
+
+- **Not Necessarily Through Root**: The longest path may or may not pass through the root.
+- **Edge Count**: If you are counting the number of edges on the longest path, then the diameter would be one less than the number of nodes on that path.
+- **Recursive Computation**: The diameter can be computed using a recursive approach, typically by calculating the height of left and right subtrees.
+
+### Code Example: Calculating Diameter
+
+Here is the Python code:
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+# This function will return two values: height and diameter
+def height_and_diameter(node):
+    if node is None:
+        return 0, 0
+    
+    # Get height and diameter of left subtree
+    l_height, l_diameter = height_and_diameter(node.left)
+    
+    # Get height and diameter of right subtree
+    r_height, r_diameter = height_and_diameter(node.right)
+    
+    # The new height of the tree is the maximum height of its two subtrees, plus 1
+    current_height = 1 + max(l_height, r_height)
+    
+    # Nodes on the longest path through the root
+    nodes_through_root = l_height + r_height + 1
+    
+    # The new diameter is the maximum of the following:
+    # 1. Diameter of left subtree
+    # 2. Diameter of right subtree
+    # 3. Number of nodes on the longest path through the root
+    current_diameter = max(nodes_through_root, max(l_diameter, r_diameter))
+    
+    return current_height, current_diameter
+
+# Create a sample tree
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.left.right.left = Node(6)
+root.left.right.right = Node(7)
+
+# Test the optimized function
+_, tree_diameter = height_and_diameter(root)
+print("Diameter of tree:", tree_diameter)
+```
+
+---
+
+## 🔹 5. What is a _Binary Tree_?
+
+### Answer
+
+A **Binary Tree** is a hierarchical structure where each node has up to two children, termed as **left child** and **right child**. Each node holds a data element and pointers to its left and right children.
+
+### Binary Tree Types
+
+- **Full Binary Tree**: Nodes either have two children or none.
+- **Complete Binary Tree**: Every level, except possibly the last, is completely filled, with nodes skewed to the left.
+- **Perfect Binary Tree**: All internal nodes have two children, and leaves exist on the same level.
+
+### Visual Representation
+
+![Binary Tree Types](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/binary%20tree%2Ftree-types.png?alt=media&token=847de252-5545-4a29-9e28-7a7e93c8e657)
+
+### Applications
+
+- **Binary Search Trees**: Efficient in lookup, addition, and removal operations.
+- **Expression Trees**: Evaluate mathematical expressions.
+- **Heap**: Backbone of priority queues.
+- **Trie**: Optimized for string searches.
+
+### Code Example: Binary Tree & In-order Traversal
+
+Here is the Python code:
+
+```python
+class Node:
+    """Binary tree node with left and right child."""
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+    def insert(self, data):
+        """Inserts a node into the tree."""
+        if data < self.data:
+            if self.left is None:
+                self.left = Node(data)
+            else:
+                self.left.insert(data)
+        elif data > self.data:
+            if self.right is None:
+                self.right = Node(data)
+            else:
+                self.right.insert(data)
+
+    def in_order_traversal(self):
+        """Performs in-order traversal and returns a list of nodes."""
+        nodes = []
+        if self.left:
+            nodes += self.left.in_order_traversal()
+        nodes.append(self.data)
+        if self.right:
+            nodes += self.right.in_order_traversal()
+        return nodes
+
+
+# Example usage:
+# 1. Instantiate the root of the tree
+root = Node(50)
+
+# 2. Insert nodes (This will implicitly form a Binary Search Tree for simplicity)
+values_to_insert = [30, 70, 20, 40, 60, 80]
+for val in values_to_insert:
+    root.insert(val)
+
+# 3. Perform in-order traversal
+print(root.in_order_traversal())  # Expected Output: [20, 30, 40, 50, 60, 70, 80]
+```
+
+---
+
+## 🔹 6. What is a _Balanced Tree_?
+
+### Answer
+
+A **Balanced Tree** ensures that the **Balance Factor**—the height difference between left and right subtrees of any node—doesn't exceed one. This property guarantees efficient $O(\log n)$ time complexity for **search**, **insertion**, and **deletion** operations.
+
+### Balanced Tree Criteria
+
+- **Height Difference**: Each node's subtrees differ in height by at most one.
+- **Recursive Balance**: Both subtrees of every node are balanced.
+
+### Benefits
+
+- **Efficiency**: Avoids the $O(n)$ degradation seen in unbalanced trees.
+- **Predictability**: Provides stable performance, essential for real-time applications.
+
+### Visual Comparison
+
+![](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/binary%20tree%2FHeight-Balanced-Tree-2%20(1).png?alt=media&token=4751e97d-2115-4a6a-a4cc-19fa1a1e0a7d)
+
+
+
+The **balanced tree** maintains $O(\log n)$ height, while the **unbalanced tree** could degenerate into a linked list with $O(n)$ height.
+
+### Code Example: Balance Verification
+
+Here is the Python code:
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+def is_balanced(root):
+    if root is None:
+        return True
+
+    left_height = get_height(root.left)
+    right_height = get_height(root.right)
+
+    return abs(left_height - right_height) <= 1 and is_balanced(root.left) and is_balanced(root.right)
+
+def get_height(node):
+    if node is None:
+        return 0
+
+    return 1 + max(get_height(node.left), get_height(node.right))
+```
+
+---
+
+## 🔹 7. Explain the _Breadth-First Search_ (BSF) traversing method.
+
+### Answer
+
+**Breadth-First Search** (BFS) is a graph traversal technique that systematically explores a graph level by level. It uses a **queue** to keep track of nodes to visit next and a list to record visited nodes, avoiding redundancy.
+
+### Key Components
+
+- **Queue**: Maintains nodes in line for exploration.
+- **Visited List**: Records nodes that have already been explored.
+
+### Algorithm Steps
+
+1. **Initialize**: Choose a starting node, mark it as visited, and enqueue it.
+2. **Explore**: Keep iterating as long as the queue is not empty. In each iteration, dequeue a node, visit it, and enqueue its unexplored neighbors.
+3. **Terminate**: Stop when the queue is empty.
+
+### Visual Representation
+
+![BFS Example](https://techdifferences.com/wp-content/uploads/2017/10/BFS-correction.jpg)
+
+### Complexity Analysis
+
+- **Time Complexity**: $O(V + E)$ where $V$ is the number of vertices in the graph and $E$ is the number of edges. This is because each vertex and each edge will be explored only once.
+  
+- **Space Complexity**: $O(V)$ since, in the worst case, all of the vertices can be inside the queue.
+
+### Code Example: Breadth-First Search
+
+Here is the Python code:
+
+```python
+from collections import deque
+
+def bfs(graph, start):
+    visited = set()
+    queue = deque([start])
+    
+    while queue:
+        vertex = queue.popleft()
+        if vertex not in visited:
+            print(vertex, end=' ')
+            visited.add(vertex)
+            queue.extend(neighbor for neighbor in graph[vertex] if neighbor not in visited)
+
+# Sample graph representation using adjacency sets
+graph = {
+    'A': {'B', 'D', 'G'},
+    'B': {'A', 'E', 'F'},
+    'C': {'F'},
+    'D': {'A', 'F'},
+    'E': {'B'},
+    'F': {'B', 'C', 'D'},
+    'G': {'A'}
+}
+
+# Execute BFS starting from 'A'
+bfs(graph, 'A')
+# Expected Output: 'A B D G E F C'
+```
+
+---
+
+## 🔹 8. Explain the _Depth-First Search_ (DFS) algorithm.
+
+### Answer
+
+**Depth-First Search** (DFS) is a graph traversal algorithm that's simpler and **often faster** than its breadth-first counterpart (BFS). While it **might not explore all vertices**, DFS is still fundamental to numerous graph algorithms.
+
+### Algorithm Steps
+
+1. **Initialize**: Select a starting vertex, mark it as visited, and put it on a stack.
+2. **Loop**: Until the stack is empty, do the following:
+   - Remove the top vertex from the stack.
+   - Explore its unvisited neighbors and add them to the stack.
+3. **Finish**: When the stack is empty, the algorithm ends, and all reachable vertices are visited.
+
+### Visual Representation
+
+![DFS Example](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/graph-theory%2Fdepth-first-search.jpg?alt=media&token=37b6d8c3-e5e1-4de8-abba-d19e36afc570)
+
+### Code Example: Depth-First Search
+
+Here is the Python code:
+
+```python
+def dfs(graph, start):
+    visited = set()
+    stack = [start]
+    
+    while stack:
+        vertex = stack.pop()
+        if vertex not in visited:
+            visited.add(vertex)
+            stack.extend(neighbor for neighbor in graph[vertex] if neighbor not in visited)
+    
+    return visited
+
+# Example graph
+graph = {
+    'A': {'B', 'G'},
+    'B': {'A', 'E', 'F'},
+    'G': {'A'},
+    'E': {'B', 'G'},
+    'F': {'B', 'C', 'D'},
+    'C': {'F'},
+    'D': {'F'}
+}
+
+print(dfs(graph, 'A'))  # Output: {'A', 'B', 'C', 'D', 'E', 'F', 'G'}
+```
+
+---
+## 🔹 9. What are key the differences between _BFS_ and _DFS_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 10. Why does _Breadth-First Search_ use more memory than _Depth-First Search_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 11. Illustrate the difference in _Peak Memory Consumption_ between _DFS_ and _BFS_.
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 12. Provide some practical examples of using _Depth-First Search_ vs _Breadth-First Search_.
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 13. Classify _Tree Traversal Algorithms_.
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 14. What is a _Binary Search Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 15. What are advantages and disadvantages of _BST_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 16. Explain the difference between _Binary Tree_ and _Binary Search Tree_.
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 17. What is _AVL Tree_? How to balance it?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 18. When standard _BSTs_ might be preferred over _AVL trees_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 19. What is a _Red-Black Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 20. How does _Inserting_ or _Deleting_ nodes affect a _Red-Black Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 21. What is the time complexity for _Insert_ into _Red-Black Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 22. What is the difference between _Heap_ and _Red-Black Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 23. Compare _Red-Black Trees_ and _AVL trees_.
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 24. What is a _B-Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 25. How is an _AVL Tree_ different from a _B-Tree_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 26. What are the differences between _B-Treese_ and _B+ Treese_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 27. Why _B-Tree_ are used for _Databases_ and _File Systems_?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
+## 🔹 28. Why are _Hash Tables_ not used instead of _B-Trees_ to access data inside a database?
+
+### Answer
+
+👉🏼 Check out all 28 answers here: [Devinterview.io - Trees](https://devinterview.io/data/trees-interview-questions)
+
+---
+
