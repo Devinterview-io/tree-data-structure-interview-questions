@@ -1,4 +1,4 @@
-# ⚫ Trees in Tech Interviews 2024: 28 Core Questions & Answers
+# ⚫ Tree Data Structures in Tech Interviews 2024: 28 Core Questions & Answers
 
 **Trees** are hierarchical data structures consisting of nodes connected by edges, with a singular root node and subsequent child nodes. They are foundational in representing hierarchical data, and in tasks like parsing expressions and managing databases. In coding interviews, questions about trees assess a candidate's understanding of **hierarchical data storage**, tree traversals, and various tree-based algorithms.
 
